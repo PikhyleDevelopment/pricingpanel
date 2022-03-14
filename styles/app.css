@@ -67,7 +67,7 @@ body {
     border-radius: 10px;
     padding: 15px 25px;
     width: 100%;
-    max-width: 960px;
+    max-width: 1500px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -105,7 +105,7 @@ body {
     font-size: 12px;
     line-height: 1.5;
     padding: 15px 0;
-    border-top: 1px solid #e1f1ff;
+    border-top: 2px solid #e1f1ff;
 }
 
 .pricing-features-item:last-child {
@@ -141,4 +141,18 @@ body {
 
 .pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
     background-color: #269aff;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 2px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
